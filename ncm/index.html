@@ -60,7 +60,7 @@ var _hmt = _hmt || [];
 				'<img src="https://cdn.jsdelivr.net/gh/ashuang360/img/wechat.png" />' +
 				'<br/>' +
                 '<br/>' +
-				'<h5 class="text-justify">本页面支持某云ncm格式转换</h5>' +
+				'<h5 class="text-justify">本页面支持网易云音乐ncm格式转换</h5>' +
 				'<br/>' +
 				'<h5 class="text-justify">避免接口滥用，请关注微信公众号  <span style="color:red;">万能的阿爽</span>  回复关键词 <span style="color:red;">验证码</span> 获取</h5>' +
 				'<br/>' +
@@ -96,6 +96,61 @@ var _hmt = _hmt || [];
 </script>
 <!--end-->
 
+<style>
+	@font-face {
+		font-family: aoleiao;
+		font-weight: 400;
+		src: url(https://dsfs.oppo.com/oppo/shop-pc-v2/main/fonts/OPPOSans-Regular.39ccf2a.ttf) format("truetype")
+	  }
+	  @font-face {
+		font-family: aoleiao;
+		font-weight: 500;
+		src: url(https://dsfs.oppo.com/oppo/shop-pc-v2/main/fonts/OPPOSans-Medium.621326d.ttf) format("truetype")
+	  }
+	  * {font-family: aoleiao !important;}
+
+	#app{
+    text-align: center;
+    color: #2c3e50;
+    padding-top: 80px;
+	}
+	#app-footer {
+	text-align: center;
+	font-size: small;
+	position: fixed;
+	bottom: 0;
+	left: 50%; 
+	transform: translateX(-50%);
+	width: 100%;
+	background: #5555551a;
+	padding: 12px;
+	}
+	#app-footer a{color: #2c3e50;}
+
+	.nav-box{
+		background-color: rgb(49, 49, 49);
+		position: absolute;
+		top: 0;
+		height: 60px;
+		width: 100%;
+	}
+	.nav-content{
+		width: fit-content; 
+		margin: 0 auto; 
+		line-height: 60px;
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.nav-content a{
+		color: #ddd;
+		padding: 0 20px;
+	}
+	.el-button{margin: 2px !important;}
+	.mb-3.el-row{margin: 10px 0;}
+</style>
+</style>
+
+
 </head>
 
 
@@ -116,6 +171,14 @@ var _hmt = _hmt || [];
 <h3>或者，您可以尝试更换下方的几个浏览器之一。</h3></div>
 
 <h4 hidden id="loader-tips-timeout">本站是一个公益性网站，没有赞助没有广告，所以没钱更换大的服务器。首次加载页面需要等待一会，下次加载就会非常快速。| 问题反馈：aoleiao@yeah.net</a></h4></div>
+
+<div class="nav-box">
+	<div class="nav-content">
+		<a href="/" target="_blank">首页</a>
+		<a href="/ncm" target="_blank">网易云专用</a>
+	</div>
+</div>
+
 <div id="app"></div><script>(function () {
         setTimeout(function () {
             var ele = document.getElementById("loader-tips-timeout");
